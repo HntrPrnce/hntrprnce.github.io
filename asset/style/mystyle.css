@@ -1,0 +1,120 @@
+
+                *
+                {
+                    box-sizing: border-box;
+                }
+
+                body 
+                {
+                    margin: 0;
+                }
+                /*the body of the website itself*/
+
+               .header
+               {
+                background-color: rgb(80, 108, 247);
+                padding: 20px;
+                text-align: center;
+               }
+
+               .header-container 
+               {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+               }
+
+               .header-image 
+               {
+                width: 20px;
+                height: 20px;
+                margin: 0px;
+               }
+
+               .header-text 
+               {
+                margin: -15px;
+               }
+                /*the head of the website itself*/
+
+               .menu
+               {
+                overflow: hidden;
+                background-color: rgb(241, 105, 105);
+               }
+
+               .menu a
+               {
+                float: left;
+                display: block;
+                color: rgb(255, 239, 146);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+               }
+
+               .menu a:hover
+               {
+                background-color: #ffffffdd;
+                color: rgb(26, 42, 255);
+               }
+                /*How to add a Hovering Menu*/
+
+               .column
+               {
+                float: left;
+                padding: 10px;
+               }
+
+               .column.side
+               {
+                width: 25%;
+               }
+
+               .column.middle
+               {
+                width: 50%;
+               }
+
+               .middle-image 
+               {
+                width: 50%;
+                height: auto;
+                margin: 10px auto;
+                border: 5px solid black;
+               }
+
+               .row:after
+               {
+                content: "";
+                display: table;
+                clear: both;
+               }
+
+               @media screen and (max-width: 600px)
+               {
+                .column.side, .column.middle
+                {
+                    width: 100%;
+                }
+               }
+               /*max media screen*/
+               
+               .footer
+               {
+                background-color: rgb(249, 109, 109);
+                padding: 1px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               }
+
+               .footer div 
+               {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                }
+                /*footer section of the page*/
